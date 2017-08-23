@@ -1,5 +1,5 @@
 Name:           discord
-Version:        0.0.1
+Version:        0.0.2
 Release:        2%{?dist}
 Summary:        All-in-one voice and text chat
 
@@ -8,6 +8,8 @@ URL:            https://discordapp.com
 Source0:        https://dl.discordapp.net/apps/linux/%{version}/%{name}-%{version}.tar.gz
 AutoReqProv:    No
 Obsoletes:      discord-canary
+
+Requires:       libcxx
 
 # Don't build debug package
 %define debug_package %{nil}
@@ -34,6 +36,10 @@ ln -fs %{discorddir}/Discord %{buildroot}%{_bindir}/discord
 %{_bindir}/discord
 
 %changelog
+* Wed Aug 23 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.2-2
+- Added requirement libcxx
+* Wed Aug 23 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.2-1
+- Update to 0.0.2
 * Wed Feb 01 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.1-2
 Discord-canary should always be obsolete, regardless of version
 * Wed Jan 11 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.1-1
