@@ -1,6 +1,6 @@
 Name:           discord
-Version:        0.0.2
-Release:        2%{?dist}
+Version:        0.0.3
+Release:        1%{?dist}
 Summary:        All-in-one voice and text chat
 
 License:        Copyright only
@@ -36,6 +36,8 @@ ln -fs %{discorddir}/Discord %{buildroot}%{_bindir}/discord
 %{_bindir}/discord
 
 %changelog
+* Tue Dec 12 2017 Martin Hagstrom (API) <marhag87@gmail.com> 0.0.3-1
+- Update to 0.0.3
 * Wed Aug 23 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.2-2
 - Added requirement libcxx
 * Wed Aug 23 2017 Martin Hagstrom <marhag87@gmail.com> 0.0.2-1
