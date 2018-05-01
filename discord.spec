@@ -1,5 +1,5 @@
 Name:           discord
-Version:        0.0.4
+Version:        0.0.5
 Release:        1%{?dist}
 Summary:        All-in-one voice and text chat
 
@@ -36,6 +36,8 @@ ln -fs %{discorddir}/Discord %{buildroot}%{_bindir}/discord
 %{_bindir}/discord
 
 %changelog
+* Tue May 01 2018 Martin Hagstrom (API) <marhag87@gmail.com> 0.0.5-1
+- Update to 0.0.5
 * Tue Jan 09 2018 Martin Hagstrom <marhag87@gmail.com> 0.0.4-1
 - Update to 0.0.4
 * Tue Dec 12 2017 Martin Hagstrom (API) <marhag87@gmail.com> 0.0.3-1
